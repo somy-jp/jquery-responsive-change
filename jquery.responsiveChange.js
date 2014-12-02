@@ -222,7 +222,7 @@
 			var self = this;
 			setTimeout(function(){
 				$window.on('resize.'+self.uid, function(){
-					self.options.resize.apply(self.element, [self.event]);
+					self.options.resize.apply(self.element, [self.eventObj]);
 				});
 			},1);
 		},
